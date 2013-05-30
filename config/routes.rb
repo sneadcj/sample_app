@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   root to: 'static_pages#home'
 
@@ -25,6 +25,7 @@ SampleApp::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  
 
   # Sample resource route with options:
   #   resources :products do
